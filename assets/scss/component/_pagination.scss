@@ -1,0 +1,62 @@
+/*!
+component > pagination
+------------------------------
+*/
+.c-pagination {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.c-pagination-item {
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    background-color: var(--color-bg-gray);
+    font-size: 14px;
+
+    &--prev {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 6px;
+            height: 6px;
+            border-top: 1px solid #000;
+            border-right: 1px solid #000;
+            transform: rotate(-135deg);
+        }
+    }
+
+    &--next {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 6px;
+            height: 6px;
+            border-top: 1px solid #000;
+            border-right: 1px solid #000;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.is-pagination-active {
+    background-color: var(--color-bg-black);
+    color: var(--color-font-white);
+}

@@ -1,0 +1,22 @@
+@use "../../global" as g;
+
+/*!
+page > error > error
+------------------------------
+*/
+.p-error__text {
+  font-weight: bold;
+  text-align: center;
+}
+
+.p-error__text-line {
+  @include g.mq() {
+    display: block;
+  }
+}
+
+.p-error__button {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,61 @@
+@use "../global" as g;
+
+/*!
+layout > header
+------------------------------
+*/
+.l-header__head-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+
+  @include g.mq() {
+    height: 75px;
+  }
+}
+
+.l-header__logo {
+  width: 180px;
+
+  @include g.mq(sm) {
+    width: 320px;
+  }
+}
+
+.l-header__nav {
+  background-color: var(--color-bg-primary);
+  color: var(--color-font-white);
+  font-weight: bold;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.l-header__nav-list {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.l-header__nav-item {
+  white-space: nowrap;
+  font-size: 12px;
+
+  @include g.mq() {
+    font-size: 14px;
+  }
+
+  &:not(:first-child) {
+    border-left: 1px solid var(--color-border-white);
+    padding-left: 16px;
+  }
+
+  &:not(:last-child) {
+    padding-right: 16px;
+  }
+}

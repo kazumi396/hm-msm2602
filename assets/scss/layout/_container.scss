@@ -1,0 +1,13 @@
+/*!
+layout > container
+------------------------------
+*/
+.l-inner {
+  width: 90%;
+  margin: 0 auto;
+  max-width: var(--width-content);
+}
+
+.l-inner.l-inner--small {
+  max-width: var(--width-content-s);
+}
