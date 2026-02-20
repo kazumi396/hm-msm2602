@@ -23,17 +23,7 @@
 
 ## 📁 ディレクトリ構成
 
-assets/
-├── css/
-├── img/
-├── js/
-└── scss/
-├── foundation/
-├── global/
-├── layout/
-├── component/
-├── page/
-└── utility/
+<pre> ```text assets/ ├── css/ ├── img/ ├── js/ └── scss/ ├── foundation/ ├── global/ ├── component/ ├── page/ └── utility/ ``` </pre>
 
 SCSSは FLOCSS をベースに、foundation / global / layout / component / page / utility に分割しています。
 objectディレクトリは設けず、component / page / utility を直下に配置しています。
